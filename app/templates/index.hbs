@@ -1,17 +1,19 @@
-{{#link-to 'index'}}<h1>Super Rentals</h1>{{/link-to}}
-
 <h2>Find the perfect place to stay, any day.</h2>
 
 <ul class="list">
-  {{#each model as |rental|}}
+  {{#each model.rentals as |rental|}}
      {{rental-tile rental=rental}}
   {{/each}}
 </ul>
 
 {{new-rental save2="save3"}}
 
-<br>
-<div id="links">
-  {{#link-to 'about'}}About{{/link-to}}
-  {{#link-to 'contact'}}Contact{{/link-to}}
-</div>
+&nbsp;
+<h2> Cities </h2>
+
+<ul class="cities">
+  {{#each model.cities as |city|}}
+    <li>{{city.name}}</li>
+  {{/each}}
+  {{log model.cities.length}}
+</ul>

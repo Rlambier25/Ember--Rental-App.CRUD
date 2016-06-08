@@ -29,6 +29,12 @@ body {
     box-shadow: 0px 0px 4px orange;
 }
 
+.cities {
+  background-color: white;
+  color: lightblue;
+  display: inline-block;
+}
+
 h1 {
   font-family: moons;
   font-size: 65px;
@@ -125,9 +131,10 @@ button {
   border: 1px solid #999;
   border-radius: 4px;
   text-transform: uppercase;
-  font-weight: 100;
+  font-weight: 200;
   margin-bottom: 10px;
   font-size: 12px;
+  color: #000;
   letter-spacing: 2px;
   /*float: right;*/
   margin: 4px;
