@@ -1,0 +1,17 @@
+{{#link-to 'index'}}<h1>Super Rentals</h1>{{/link-to}}
+
+<h2>Find the perfect place to stay, any day.</h2>
+
+<ul class="list">
+  {{#each model as |rental|}}
+     {{rental-tile rental=rental}}
+  {{/each}}
+</ul>
+
+{{new-rental save2="save3"}}
+
+<br>
+<div id="links">
+  {{#link-to 'about'}}About{{/link-to}}
+  {{#link-to 'contact'}}Contact{{/link-to}}
+</div>

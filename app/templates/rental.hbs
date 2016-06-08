@@ -1,0 +1,7 @@
+{{#link-to 'index'}}<h1>Super Rentals</h1>{{/link-to}}
+
+<h2>More information about {{model.owner}}'s {{model.type}}:</h2>
+
+{{update-rental rental=model update="update"}}
+
+{{rental-detail rental=model destroyRental="destroyRental"}}
