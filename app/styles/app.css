@@ -55,6 +55,10 @@ h2 {
   margin-top: -20px!important;
 }
 
+.city {
+  padding-top: 50px;
+}
+
 ul li:hover {
   cursor: pointer;
   color: #000;
@@ -97,7 +101,7 @@ ul li {
   letter-spacing: 4px;
   margin-bottom: 25px;
   padding: 10px;
-  color: white;
+  color: black;
   margin-top: -20px!important;
 }
 

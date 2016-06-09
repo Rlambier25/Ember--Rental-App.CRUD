@@ -1,4 +1,4 @@
-<h2>Find the perfect place to stay, any day.</h2>
+<!-- <h2>Find the perfect place to stay, any day.</h2>
 
 <ul class="list">
   {{#each model.rentals as |rental|}}
@@ -13,7 +13,42 @@
 
 <ul class="cities">
   {{#each model.cities as |city|}}
-    <li>{{city.name}}</li>
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
   {{/each}}
   {{log model.cities.length}}
+
+  {{new-city saveCity="saveCity"}}
+</ul> -->
+
+
+
+
+
+
+
+
+<h1>Welcome to Super Rentals </h1>
+
+<h2> Available Rentals </h2>
+
+<ul class="list">
+  {{#each model.rentals as |rental|}}
+    {{rental-tile rental=rental}}
+  {{/each}}
 </ul>
+
+
+<h2 class="city"> Cities </h2>
+
+<ul class="cities">
+  {{#each model.cities as |city|}}
+    <li>{{#link-to 'city' city.id}}{{city.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{new-city saveCity="saveCity"}}
+
+<hr>
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
