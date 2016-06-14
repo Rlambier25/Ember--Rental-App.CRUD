@@ -1,11 +1,9 @@
-{{city.name}}'s Details
-
-Country: {{city.country}}
+<h4>Location:  {{fullLocation}}</h4>
 
 Rentals available in {{city.name}}:
 
-<ul id="list">
-  {{#each city.rentals as |rental|}}
+<ul>
+  {{#each sortedRentals as |rental|}}
     <li>{{#link-to 'rental' rental.id}}{{rental.owner}}'s {{rental.type}}{{/link-to}}</li>
   {{/each}}
 </ul>
