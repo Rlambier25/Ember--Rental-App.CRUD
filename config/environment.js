@@ -2,10 +2,14 @@
 
 module.exports = function(environment) {
   var ENV = {
+    firebase: {
+        apiKey: "AIzaSyD0_RJWut2_RtZn2sggMHIyLk3wRDgXfv8",
+        authDomain: "super-rental-app-e5525.firebaseapp.com",
+        databaseURL: "https://super-rental-app-e5525.firebaseio.com",
+        storageBucket: "super-rental-app-e5525.appspot.com",
+    },
     modulePrefix: 'super-rentals',
     environment: environment,
-    contentSecurityPolicy: { 'connect-src': "'self' https://auth.firebase.com wss://*.firebaseio.com" },
-    firebase: 'https://epicodus-super-rentals.firebaseio.com/',
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
