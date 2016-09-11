@@ -1,5 +1,8 @@
 # Super-rentals
 
+![screenshot 4]
+(https://cloud.githubusercontent.com/assets/14284114/18421478/78d16ece-7840-11e6-9a50-09a006b72f16.png)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
